@@ -1,0 +1,298 @@
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('fonts/Vazir-Regular.woff2') format('woff2'),
+         url('fonts/Vazir-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.company-name {
+    font-family: 'Vazir', sans-serif;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #061de5fd;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    font-family: 'Vazir', sans-serif;
+    background: #061de5fd; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.company-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffefef;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-subtext {
+    font-family: 'Vazir', sans-serif;
+    font-size: 100px; 
+    color: #444;
+    margin-top: 60px;
+    line-height: 1.8;
+    text-align: right;
+}
+
+.banner-text-container {
+    flex-grow: 1; 
+}
+
+.banner-image {
+    width: 600px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 10%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-text {
+    font-size: 32px; 
+    font-weight: bold;
+    color: #b30000; 
+    margin: 0;
+}
+
+.banner-subtext {
+    font-size: 16px; 
+    color: #555; 
+    margin-top: 10px; 
+    line-height: 1.6; 
+}
+
+/* //////////// */
+main {
+    margin-top: 80px; 
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services {
+    text-align: center;
+    margin-top: 30px; 
+    color: #070add;
+}
+
+.service-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: calc(33.333% - 20px); 
+    background: #ffefef;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        width: 100%; 
+    }
+}
+
+.partner-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.partner-logos h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px; 
+    color: #070add;
+}
+
+.partner-logos .logos {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5px; 
+}
+
+.partner-logos img {
+    max-width: 200px; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* درباره شرکت  */
+.company-info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-container .text {
+    flex: 1;
+    font-family: 'Vazir', sans-serif;
+}
+
+.info-container .text h2 {
+    font-size: 24px;
+    color: #061de5fd;
+    margin-bottom: 10px;
+}
+
+.info-container .text p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.info-container .image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-container .image img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*  آمار شرکت */rtr
+.company-stats {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.company-stats h2 {
+    font-size: 28px;
+    color: #061de5fd; 
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.stat-item {
+    flex: 1; 
+    text-align: center; 
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px; 
+}
+
+.stat-item h3 {
+    font-size: 24px;
+    color: #b30000; 
+    margin: 10px 0;
+}
+
+.stat-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+

@@ -1,0 +1,30 @@
+
+.company-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* استایل‌های بخش اصلی */
+main {
+    padding: 20px;
+}
+
+.about-company {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-family: 'Vazir', sans-serif;
+    margin: 10px 0;
+}

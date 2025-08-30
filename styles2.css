@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('fonts/Vazir-Regular.woff2') format('woff2'),
+         url('fonts/Vazir-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.team {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+    font-size: 28px;
+    color: #061de5fd;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.team-member {
+    width: 20%;
+    text-align: center;
+    background: #ffefef;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+    }
+}
+
+.customer-feedback {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-feedback h2 {
+    font-size: 28px;
+    color: #061de5fd;
+    margin-bottom: 20px;
+}
+
+.feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feedback-item {
+    width: calc(25% - 20px);
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feedback-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.feedback-item h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.feedback-item .customer-role {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.feedback-item .customer-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* استایل ریسپانسیو */
+@media (max-width: 768px) {
+    .feedback-item {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-item {
+        width: 100%; 
+    }
+}
+
+
+/*  هم اکنون آغاز کنید */
+
+.start-now {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.start-now h2 {
+    font-size: 28px;
+    color: #061de5fd;
+    margin-bottom: 20px;
+}
+
+.request-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.request-form .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.request-form .form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.request-form .form-group input,
+.request-form .form-group textarea,
+.request-form .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.request-form .row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.request-form .row-half {
+    flex: 1;
+}
+
+.request-form .full-width {
+    width: 100%;
+}
+
+.request-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.request-form button:hover {
+    background-color: #45a049;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #060898;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+    background-color: #5555cc;
+    transition: 0.3s;
+}
+
+/* /////// */
+
+/* footer */
+
+.site-footer {
+    background-color: #061de5fd; 
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Vazir', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about,
+.newsletter {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-about h3,
+.newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-about p,
+.newsletter p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background-color: #ffcc00; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #e6b800;
+}
+
+.newsletter-text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+
